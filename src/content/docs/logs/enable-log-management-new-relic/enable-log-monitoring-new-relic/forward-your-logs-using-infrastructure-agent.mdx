@@ -436,9 +436,11 @@ logs:
   - name: windows-pshell
     winlog: 
        channel: Windows Powershell
+ # OperationsManager Log may be listed as either with or without a space. Choose the option for your environment.  Use Powershell to enumerate the foramt.
   - name: scom
     winlog: 
-       channel: Operations Manager
+       #channel: Operations Manager
+       channel: OperationsManager
 
  # Entry for Windows Defender Logs
   - name: windows-defender
